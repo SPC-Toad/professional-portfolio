@@ -4,7 +4,7 @@ import "./Military.css"
 function Military() {
   return (
     <div id='military-container'>
-        <video src='/ranger/ranger.mp4' alt='video' id='military-video' autoPlay='true' muted='true' loop='true'/>
+        <video src='/ranger/ranger.mp4' alt='video' id='military-video' autoPlay muted loop/>
         <div id='military-context-container'>
             <div id='military-context-text'>
               I am a <span style={{fontSize: '1.1rem', fontWeight: 'bold',backgroundColor: 'transparent'}}>Special Agent</span> in training with the United States Army Reserve.

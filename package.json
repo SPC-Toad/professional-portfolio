@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^7.1.0",
     "@react-three/drei": "^9.111.3",
     "@react-three/fiber": "^8.17.6",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,12 +18,11 @@
     "three": "^0.167.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+"scripts": {
+  "start": "craco start",
+  "build": "craco build",
+  "test": "craco test"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
