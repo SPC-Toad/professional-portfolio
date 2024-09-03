@@ -1,0 +1,72 @@
+#card-container-mobile {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 20rem;
+    height: 45vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 2rem;
+    flex-direction: column;
+}
+
+#card-background-mobile{
+    position: absolute;
+    object-fit: cover;
+    width: 20rem;
+    height: 45vh;
+    z-index: 0;
+    border-radius: 2rem;
+}
+
+
+
+#card-top-container-mobile {
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#card-title-mobile {
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: .2rem;
+    margin-bottom: .3rem;
+}
+#card-language-mobile {
+    background-color: grey;
+    padding: .2rem;
+    border-radius: .3rem;
+    text-align: center;
+}
+
+#card-bottom-container-mobile {
+    background-color: transparent;
+    z-index: 99;
+    display: flex;
+    width: 17rem;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+#card-description-mobile {
+    width: 12rem;
+    height: 3rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: transparent;
+    font-style: italic;
+}
+
+#card-right-arrow-mobile {
+    /* filter: invert(1); */
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+}

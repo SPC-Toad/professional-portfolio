@@ -1,0 +1,29 @@
+#carousel-main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensures the container is positioned correctly */
+}
+
+#carousel-container {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 100%;
+    height: 70vh;
+    scroll-snap-type: x mandatory; /* Optional: Enable snapping behavior */
+    scrollbar-width: none;
+}
+
+.active {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.inactive {
+    scale: .9;
+    filter: blur(1px);
+    transition: filter 0.3s ease;
+}

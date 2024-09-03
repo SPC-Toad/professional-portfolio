@@ -1,0 +1,123 @@
+.military-container {
+    background-color: transparent;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-image: linear-gradient(90deg,transparent,transparent calc(50% - 1.5px),#000 50%,transparent 0);
+}
+
+.military-left-container {
+    width: 30%;
+    background: transparent !important;
+}
+
+.military-right-container {
+    width: 30%;
+    background: transparent !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#army-img {
+    width: 8rem;
+    background: transparent !important;
+}
+
+#military-title {
+    color: var(--color-white);
+    font-size: var(--header2-topic-font-size);
+    background: transparent !important;
+    padding-top: 1.875rem;
+    margin-bottom: 1.875rem;
+    font-weight: var(--bold-font);
+}
+
+#military-rank-img {
+    width: 10rem;
+    background: transparent !important;
+}
+
+#military-description-bold {
+    color: var(--color-white);
+    background: transparent !important;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    line-height: 24px;
+    font-weight: var(--bold-font);
+    margin-bottom: 1rem;
+}
+
+#military-description {
+    color: var(--color-white);
+    background: transparent !important;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    line-height: 24px;
+    font-weight: 100 !important;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .military-container {
+        width: 100%;
+        padding-bottom: 7.5rem;
+        padding-top: 7.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        background-image:none;
+    }
+    
+    .military-left-container {
+        width: 90%;
+        background: transparent !important;
+    }
+    
+    
+    #army-img {
+        width: 8rem;
+        background: transparent !important;
+    }
+    
+    #military-title {
+        color: var(--color-black);
+        font-size: var(--header2-topic-font-size);
+        background: transparent !important;
+        padding-top: 1.875rem;
+        margin-bottom: 1.875rem;
+        font-weight: var(--bold-font);
+    }
+    
+    .military-right-container {
+        width: 90%;
+        background: transparent !important;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #military-description-bold {
+        color: var(--color-black);
+        background: transparent !important;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        line-height: 24px;
+        font-weight: var(--bold-font);
+        margin-bottom: 1.875rem;
+    }
+    
+    #military-description {
+        color: var(--color-black);
+        background: transparent !important;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        line-height: 24px;
+        font-weight: 100 !important;
+    }
+}

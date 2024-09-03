@@ -1,0 +1,258 @@
+.hero-container {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--color-black) 1px, transparent 1px), linear-gradient(to left, var(--color-grey-line) 1px, transparent 1px);
+    background-size: 25% 100%;
+    user-select: none;
+}
+
+.hero-background-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: invert(1);
+    opacity: .1;
+    z-index: 0;
+}
+
+.left-handside-container {
+    width: 50%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.hero-detail-container {
+    display: flex;
+    background-color: transparent;
+}
+
+
+#hero-red-line {
+    margin-right: .75rem;
+    border: 1px solid var(--color-button);
+}
+
+.description-button-container {
+    background-color: transparent;
+}
+
+#hero-title {
+    font-size: var(--title-font-size);
+    color: var(--color-font);
+    font-weight: var(--bold-font);
+    margin-bottom: 1.875rem;
+    background-color: transparent;
+}
+
+#hero-intro {
+    font-size: var( --normal-text-font-size);
+    color: var(--color-font);
+    font-weight: var(--bold-font);
+    margin-bottom: 1.875rem;
+    background-color: transparent;
+}
+
+#hero-detail {
+    font-size: var( --normal-text-font-size);
+    color: var(--color-font);
+    font-weight: var(--normal-weight-font);
+    margin-bottom: 1.875rem;
+    background-color: transparent;
+}
+
+
+.hero-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--color-button);
+    height: 3.75rem;
+    overflow: hidden;
+    line-height: 1rem;
+    transition: all .4s;
+    justify-content: center;
+    border: 0.0625rem solid var(--color-button);
+    width: 18rem;
+}
+
+#hero-button {
+    background: var(--color-button);
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: padding 0.4s ease; /* Change transition to padding */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding-left: 3.75rem;
+    justify-content: center;
+    letter-spacing: 1rem;
+    font-style: italic;
+}
+
+#button-arrow {
+  transform: translateX(105%);
+  transition: transform 0.4s ease;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 1.25rem;
+}
+
+.hero-button-container:hover #hero-button {
+    padding-left: 0; /* Decrease padding on hover */
+}
+
+.hero-button-container:hover #button-arrow {
+    transform: translateX(0%);
+}
+
+.image-container {
+    width: 50%;
+    z-index: 1;
+}
+
+#hero-img {
+    width: 100%;
+    object-fit:cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 50vh;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .hero-container {
+        width: 100%;
+        min-height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: none;
+        background-size: none;
+    }
+    
+    .hero-background-img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        filter: invert(1);
+        opacity: .1;
+        z-index: 0;
+        position: absolute;
+    }
+    
+    .left-handside-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        z-index: 1;
+    }
+    
+    .hero-detail-container {
+        display: flex;
+        background-color: transparent;
+    }
+    
+    
+    #hero-red-line {
+        margin-right: .75rem;
+        border: 1px solid var(--color-button);
+    }
+    
+    .description-button-container {
+        background-color: transparent;
+    }
+    
+    #hero-title {
+        font-size: var(--title-font-size);
+        color: var(--color-font);
+        font-weight: var(--bold-font);
+        margin-bottom: 1.875rem;
+        background-color: transparent;
+    }
+    
+    #hero-intro {
+        font-size: var( --normal-text-font-size);
+        color: var(--color-font);
+        font-weight: var(--bold-font);
+        margin-bottom: 1.875rem;
+        background-color: transparent;
+    }
+    
+    #hero-detail {
+        font-size: var( --normal-text-font-size);
+        color: var(--color-font);
+        font-weight: var(--normal-weight-font);
+        margin-bottom: 1.875rem;
+        background-color: transparent;
+    }
+    
+    
+    .hero-button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: var(--color-button);
+        height: 3.75rem;
+        overflow: hidden;
+        line-height: 1rem;
+        transition: all .4s;
+        justify-content: center;
+        border: 0.0625rem solid var(--color-button);
+        width: 18rem;
+    }
+    
+    #hero-button {
+        background: var(--color-button);
+        color: var(--color-font);
+        text-decoration: none;
+        /* font-size: 1.1rem; */
+        font-weight: 700;
+        transition: padding 0.4s ease; /* Change transition to padding */
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding-left: 3.75rem;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    #button-arrow {
+      transform: translateX(105%);
+      transition: transform 0.4s ease;
+      width: 1.25rem;
+      height: 1.25rem;
+      padding: 1.25rem;
+    }
+    
+    .hero-button-container:hover #hero-button {
+        padding-left: 0; /* Decrease padding on hover */
+    }
+    
+    .hero-button-container:hover #button-arrow {
+        transform: translateX(0%);
+    }
+    
+    .image-container {
+        max-width: 50%;
+        min-width: 20rem;
+        z-index: 1;
+    }
+    
+    #hero-img {
+        width: 100%;
+        object-fit:cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 50vh;
+    }
+}
